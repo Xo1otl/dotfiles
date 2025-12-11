@@ -1,0 +1,25 @@
+Host nompo
+  HostName 100.96.0.7
+  User nompo
+  ForwardAgent yes
+
+Host nompo-wsl
+  HostName localhost
+  Port 2222
+  User john
+  ProxyCommand ssh -W %h:%p nompo
+  ForwardAgent yes
+  HostKeyAlias nompo-wsl
+
+Host katayamalab
+  HostName 100.96.0.6
+  User Administrator
+  ForwardAgent yes
+
+Host katayamalab-wsl
+  HostName localhost
+  Port 2222
+  User katayamalab
+  ProxyCommand ssh -W %h:%p katayamalab
+  ForwardAgent yes
+  HostKeyAlias katayamalab-wsl
