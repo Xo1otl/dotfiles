@@ -1,6 +1,6 @@
 Host *
-  ServerAliveInterval 15
-  ServerAliveCountMax 3
+  ServerAliveInterval 30
+  ServerAliveCountMax 30
 
 Host nompo
   HostName 100.96.0.7
