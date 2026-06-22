@@ -1,10 +1,10 @@
 [tools]
 go = "latest"
-julia = "latest"
 python = "latest"
 uv = "latest"
 bun = "latest"
 protoc = "latest"
 chezmoi = "latest"
+node = "25.9.0"
 [settings]
 trusted_config_paths = ['/workspaces/mictlan']
