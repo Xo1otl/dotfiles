@@ -1,5 +1,10 @@
 {
   "effortLevel": "xhigh",
+  "theme": "dark",
   "editorMode": "vim",
-  "skipAutoPermissionPrompt": true
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen",
+  "permissions": {
+    "defaultMode": "auto"
+  }
 }
