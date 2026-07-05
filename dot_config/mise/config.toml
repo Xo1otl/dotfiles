@@ -8,5 +8,6 @@ chezmoi = "latest"
 node = "latest"
 typst = "latest"
 claude = "latest"
+"npm:@googleworkspace/cli" = { version = "latest", npm_args = "--ignore-scripts=false --allow-scripts=@googleworkspace/cli" }
 [settings]
 trusted_config_paths = ['/workspaces/mictlan']
