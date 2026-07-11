@@ -1,0 +1,23 @@
+{
+  "effortLevel": "xhigh",
+  "theme": "dark",
+  "editorMode": "vim",
+  "skipAutoPermissionPrompt": true,
+  "tui": "fullscreen",
+  "permissions": {
+    "defaultMode": "auto"
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rtk hook claude"
+          }
+        ]
+      }
+    ]
+  }
+}
