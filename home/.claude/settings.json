@@ -1,9 +1,4 @@
 {
-  "effortLevel": "xhigh",
-  "theme": "dark",
-  "editorMode": "vim",
-  "skipAutoPermissionPrompt": true,
-  "tui": "fullscreen",
   "permissions": {
     "defaultMode": "auto"
   },
@@ -19,5 +14,11 @@
         ]
       }
     ]
-  }
+  },
+  "effortLevel": "high",
+  "tui": "fullscreen",
+  "theme": "dark",
+  "editorMode": "vim",
+  "skipAutoPermissionPrompt": true,
+  "autoMemoryEnabled": false
 }
