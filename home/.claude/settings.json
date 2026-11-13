@@ -5,6 +5,7 @@
   "permissions": {
     "defaultMode": "bypassPermissions"
   },
+  "model": "sonnet",
   "hooks": {
     "PreToolUse": [
       {
@@ -16,9 +17,45 @@
           }
         ]
       }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "^(startup|resume|clear|compact|fork)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash '/home/vscode/.claude/hooks/herdr-agent-state.sh' session",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   },
+  "feedbackDrafts": "off",
   "effortLevel": "high",
+  "modelSettings": {
+    "claude-fable-5-1": {
+      "effortLevel": "high"
+    },
+    "claude-opus-5": {
+      "effortLevel": "xhigh"
+    },
+    "~z-ai/glm-flash-latest": {
+      "effortLevel": "xhigh"
+    },
+    "stealth/union-alpha": {
+      "effortLevel": "high"
+    },
+    "z-ai/glm-5.3-flash": {
+      "effortLevel": "xhigh"
+    },
+    "claude-opus-5-5": {
+      "effortLevel": "xhigh"
+    },
+    "claude-sonnet-5-5": {
+      "effortLevel": "medium"
+    }
+  },
   "tui": "fullscreen",
   "autoMemoryEnabled": false,
   "skipDangerousModePermissionPrompt": true,
