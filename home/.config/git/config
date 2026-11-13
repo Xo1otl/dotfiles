@@ -1,4 +1,14 @@
-# Pushing a superproject first pushes the submodule commits it points to,
-# so a remote never references commits its submodules' remotes lack.
+# ~/.gitconfig is left to VS Code Dev Containers, which writes its credential
+# helper and a copy of the host's .gitconfig there on every attach.
+[user]
+	email = xolotl.mictl4n@gmail.com
+	name = Xo1otl
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
 [push]
+	autoSetupRemote = true
+	# Pushing a superproject first pushes the submodule commits it points to,
+	# so a remote never references commits its submodules' remotes lack.
 	recurseSubmodules = on-demand
