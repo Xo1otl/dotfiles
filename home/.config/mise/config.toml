@@ -1,2 +1,8 @@
+[env]
+GOOGLE_WORKSPACE_CLI_CONFIG_DIR = "{{env.HOME}}/.config/gws"
+GOOGLE_WORKSPACE_CLI_KEYRING_BACKEND = "file"
+
 [tools]
+"github:can1357/oh-my-pi" = "18.1.8"
 herdr = "latest"
+rust = "stable"
