@@ -1,0 +1,3 @@
+# State that agent tooling leaves in whichever project it runs in.
+.omp/
+skills-lock.json

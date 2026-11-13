@@ -1,0 +1,4 @@
+# Pushing a superproject first pushes the submodule commits it points to,
+# so a remote never references commits its submodules' remotes lack.
+[push]
+	recurseSubmodules = on-demand
